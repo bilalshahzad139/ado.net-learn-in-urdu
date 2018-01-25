@@ -6,7 +6,7 @@ https://docs.google.com/document/d/1XT0cplbWzJTaGiBW_pBs0LeTZ7Wcs3zwppCmzTZqsu0/
 Complete Video Series can be found here 
 http://learninginurdu.pk/category/ado/
 
-Find use 
+Find us online
 YouTube: https://www.youtube.com/c/LearnInUrdu139
 FaceBook: https://www.facebook.com/LearningInUrduCentre
 Twitter: @learninurdu139
