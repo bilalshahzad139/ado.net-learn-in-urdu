@@ -3,10 +3,19 @@ USE `cms`;
 
 DROP TABLE IF EXISTS `users`;
 
-CREATE TABLE `users` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(45) NOT NULL,
-  `Age` int(11) NOT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+	CREATE TABLE `users` (
+	  `ID` int(11) NOT NULL AUTO_INCREMENT,
+	  `Name` varchar(45) NOT NULL,
+	  `Age` int(11) NOT NULL,
+	  PRIMARY KEY (`ID`)
+	) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
+
+
+
+CREATE  PROCEDURE `sp_save`(p_id int)
+BEGIN
+
+select p_id;
+
+END

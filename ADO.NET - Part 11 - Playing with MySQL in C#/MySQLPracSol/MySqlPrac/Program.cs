@@ -21,7 +21,7 @@ namespace MySqlPrac
 
         static void TestDBMySQL()
         {
-            String connStr = @"server=localhost; port=3306;Uid=root;Pwd=;database=cms;Convert Zero Datetime=True";
+            String connStr = @"server=127.0.0.1; port=3306;Uid=root;Pwd=12345;database=cms;Convert Zero Datetime=True";
             try
             {
                 using (MySqlConnection conn = new MySqlConnection(connStr))
@@ -45,6 +45,18 @@ namespace MySqlPrac
                         Console.WriteLine("Name:{0}", name);
                         Console.WriteLine("Age:{0}", age);
                     }
+                    reader.Close();
+
+                    //how to call an SP
+
+                    command = new MySqlCommand("sp_save",conn);
+                    //command.Connection = conn;
+                    //command.CommandText = "sp_save";
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+
+                    command.Parameters.Add(new MySqlParameter("p_id", 5));
+
+                    var r = command.ExecuteScalar();
 
                     //DataTable dt = new DataTable();
                     //dt.Load(reader);
